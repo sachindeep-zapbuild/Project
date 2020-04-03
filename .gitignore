@@ -62,9 +62,3 @@ en.bak/
 
 
 node_modules/
-package-lock.json
-package.json
-
-public/
-.gitignore
-README.md
