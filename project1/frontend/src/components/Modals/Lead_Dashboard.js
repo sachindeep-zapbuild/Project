@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, ListGroup, ListGroupItem, ListGroupItemHeading, Col, Row } from 'reactstrap';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-
+import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { Link } from "react-router-dom";
 import ModalConductor from './ModalConductor';
 import axios from 'axios';
 
@@ -42,7 +42,7 @@ class LeadBoard extends React.Component {
                     </NavbarBrand>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <Link to="/newleadform" className="text-light">Add New Lead</Link>
                         </NavItem>
                     </Nav>
                 </Navbar>
